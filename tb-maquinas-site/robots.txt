@@ -1,0 +1,15 @@
+# TB Máquinas – robots.txt
+# https://www.tbmaquinas.com.br/
+
+User-agent: *
+Allow: /
+
+# Bloquear arquivos desnecessários para crawl
+Disallow: /css/
+Disallow: /js/
+
+# Sitemap
+Sitemap: https://www.tbmaquinas.com.br/sitemap.xml
+
+# Crawl-delay para bots bem comportados
+Crawl-delay: 10

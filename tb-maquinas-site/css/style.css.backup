@@ -1,0 +1,68 @@
+Created At: 2026-06-16T17:24:30Z
+Completed At: 2026-06-16T17:24:30Z
+File Path: `file:///c:/Users/Eduarda/Desktop/projeto%20Tb%20M%C3%A1quinas/tb-maquinas-site/css/style.css`
+Total Lines: 1240
+Total Bytes: 36568
+Showing lines 1 to 60
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: 
+2: @font-face {
+3:   font-family: 'mbf-canno';
+4:   src: url('../fonts/mbf-canno.ttf') format('truetype');
+5:   font-weight: normal;
+6:   font-style: normal;
+7: }
+8: /* ═══════════════════════════════════════════════════════════
+9:    TB MÁQUINAS — Design System
+10:    Inspirado em Trendustry | Identidade TB Máquinas
+11:    ═══════════════════════════════════════════════════════════ */
+12: 
+13: /* ─── GOOGLE FONTS ─────────────────────────────────────────── */
+14: @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&family=Open+Sans:wght@300;400;500;600&display=swap');
+15: 
+16: /* ─── RESET ─────────────────────────────────────────────────── */
+17: *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+18: html { scroll-behavior: smooth; font-size: 15px; }
+19: 
+20: /* ─── VARIÁVEIS ─────────────────────────────────────────────── */
+21: :root {
+22:   --primary:       #000000;
+23:   --primary-hover: #424449;
+24:   --accent:        #FF7B00;
+25:   --accent-hover:  #e66b00;
+26:   --white:         #ffffff;
+27:   --light-bg:      #424449;
+28:   --body-text:     #cccccc;
+29:   --dark-text:     #ffffff;
+30:   --border:        #4C4E52;
+31:   --topbar-bg:     #000000;
+32:   --nav-bg:        #000000;
+33:   --footer-bg:     #000000;
+34:   --footer-text:   rgba(255,255,255,0.65);
+35:   --radius:        4px;
+36:   --radius-lg:     8px;
+37:   --shadow:        0 4px 20px rgba(0,0,0,0.1);
+38:   --shadow-hover:  0 8px 32px rgba(0,0,0,0.18);
+39:   --transition:    all 0.3s ease;
+40:   --font-heading:  'Titillium Web', sans-serif;
+41:   --font-body:     'Open Sans', sans-serif;
+42:   --container:     1200px;
+43:   --section-pad:   90px 0;
+44:   --section-pad-sm:50px 0;
+45: }
+46: 
+47: /* ─── BASE ──────────────────────────────────────────────────── */
+48: body {
+49:   font-family: var(--font-body);
+50:   font-size: 15px;
+51:   color: var(--body-text);
+52:   line-height: 1.7;
+53:   background: #000000;
+54:   -webkit-font-smoothing: antialiased;
+55: }
+56: a { color: var(--accent); text-decoration: none; transition: var(--transition); }
+57: a:hover { color: var(--accent-hover); }
+58: img { max-width: 100%; height: auto; display: block; }
+59: ul { list-style: none; }
+60: h1, h2, h3, h4, h5, h6 {
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

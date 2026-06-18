@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre | TB Máquinas – História, Missão e Clientes</title>
+  <meta name="description" content="Conheça a história da TB Máquinas, empresa com décadas de experiência na fabricação de máquinas para o setor de embalagens.">
+  <link rel="icon" type="image/png" href="images/produtos/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .about-blocks { display: flex; flex-direction: column; gap: 0; }
+    .about-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      min-height: 420px;
+    }
+    .about-block.reverse .block-image { order: 2; }
+    .about-block.reverse .block-content { order: 1; }
+    .block-image { overflow: hidden; }
+    .block-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .block-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 56px;
+      background: var(--white);
+    }
+    .about-block:nth-child(even) .block-content { background: var(--light-bg); }
+    .block-content h2 { font-size: clamp(22px, 3vw, 32px); margin-bottom: 16px; }
+    .block-content p { font-size: 15px; line-height: 1.85; color: var(--body-text); margin-bottom: 12px; }
+    .block-content p:last-of-type { margin-bottom: 20px; }
+    @media (max-width: 900px) {
+      .about-block, .about-block.reverse { grid-template-columns: 1fr; }
+      .about-block.reverse .block-image { order: 0; }
+      .about-block.reverse .block-content { order: 0; }
+      .block-image { height: 280px; }
+      .block-content { padding: 36px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="topbar-contact">
+          <a href="tel:+555436981050"><i class="fas fa-phone"></i> +55 54 3698-1050</a>
+          <a href="https://wa.me/5554992425851?text=Ol%C3%A1!%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20e%20servi%C3%A7os%20da%20TB%20M%C3%A1quinas." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> +55 54 99242-5851</a>
+          <a href="mailto:tbmaquinas@tbmaquinas.com"><i class="fas fa-envelope"></i> tbmaquinas@tbmaquinas.com</a>
+        </div>
+        <div class="topbar-right">
+          <div class="topbar-hours">Atendimento: 07:30 às 11:30 | 13:30 às 17:00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" id="logo-header" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+          <img src="images/produtos/favicon.png" alt="TB Máquinas" style="height:40px;width:auto;object-fit:contain;">
+          <span class="logo-text" style="font-family: var(--font-heading); font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #ffffff;">Máquinas e Equipamentos</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+            <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
+            <li class="nav-item"><a href="feiras.html" class="nav-link">Feiras</a></li>
+            <li class="nav-item"><a href="sobre.html" class="nav-link active">Sobre</a></li>
+            <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a href="contato.html#formulario" class="btn btn-nav">Solicitar Orçamento</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero-visual" style="background-image: url('images/feiras/feira5-1.png');">
+      <div class="hero-overlay"></div>
+      <div class="container fade-up">
+        <div class="page-hero-content">
+          <nav class="breadcrumb">
+            <a href="index.html">Início</a>
+            <span class="breadcrumb-sep"><i class="fas fa-chevron-right"></i></span>
+            <span class="breadcrumb-current">Sobre</span>
+          </nav>
+          <span class="hero-label">Nossa História</span>
+          <h1>Sobre a TB Máquinas</h1>
+          <p class="hero-desc">Com décadas de experiência nacional, fabricamos máquinas para o setor de embalagens unindo tradição, segurança e alta tecnologia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO INSTITUCIONAL -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image fade-up">
+            <img src="images/produtos/maq6.jpg" alt="Instalações TB Máquinas" class="about-image-main" loading="lazy">
+            <div class="about-image-badge">
+              <span class="badge-number">100%</span>
+              <span class="badge-label">Fabricação<br>Nacional</span>
+            </div>
+          </div>
+          <div class="about-content fade-up fade-up-delay-1">
+            <span class="section-label">Quem Somos</span>
+            <h2 class="section-title left section-title-line left">Inovação e Tecnologia</h2>
+            <p class="about-text">A TB Máquinas é especializada na fabricação de rotuladoras e equipamentos para o setor de embalagens, entregando soluções customizadas com a mais alta tecnologia nacional.</p>
+            <p class="about-text">Como líderes de mercado, estamos acostumados a trabalhar com todos os tipos de clientes: locais ou globais, grandes ou pequenos. A qualidade excepcional é a base da nossa empresa e também o que move todas as nossas decisões, desde os materiais que compramos até a melhor forma de atender os nossos clientes.</p>
+            <p class="about-text">Atuamos em uma área altamente competitiva, por isso, estamos sempre investindo em tecnologias e pesquisas para estar sempre um passo à frente de nossos concorrentes. Esse compromisso com a qualidade garante o nosso sucesso e a satisfação de todos os nossos clientes.</p>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:28px;">
+              <a href="contato.html#formulario" class="btn btn-primary"><i class="fas fa-file-invoice-dollar"></i> Solicitar Orçamento</a>
+              <a href="produtos.html" class="btn btn-outline"><i class="fas fa-th"></i> Ver Produtos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item fade-up">
+            <div class="stat-number">30+</div>
+            <div class="stat-label">Anos de Mercado</div>
+          </div>
+          <div class="stat-item fade-up fade-up-delay-1">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Modelos de Produto</div>
+          </div>
+          <div class="stat-item fade-up fade-up-delay-2">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Fabricação Nacional</div>
+          </div>
+          <div class="stat-item fade-up fade-up-delay-3">
+            <div class="stat-number">NR12</div>
+            <div class="stat-label">Segurança</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VÍDEO INSTITUCIONAL -->
+    <section class="video-institucional-module fade-up">
+      <div class="container">
+        <div class="video-grid">
+          <div class="video-content">
+            <span class="section-label">Conheça a Empresa</span>
+            <h2>Tecnologia em Movimento</h2>
+            <p>A TB Máquinas se destaca pela qualidade, inovação e pelo compromisso em entregar as melhores soluções em rotuladoras e equipamentos industriais para os nossos clientes.</p>
+            <p>Assista ao nosso vídeo institucional e conheça de perto nossa estrutura, nossos processos de fabricação rigorosos e a equipe técnica dedicada a transformar tecnologia em produtividade para a sua indústria.</p>
+          </div>
+          <div class="video-wrapper">
+            <video src="video institucional.mp4" controls preload="metadata" style="width:100%; height:100%; object-fit:cover; background-color:#000;" poster="images/feiras/feira5.png"></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCOS SOBRE / DIFERENCIAIS -->
+    <div class="about-blocks">
+      <div class="about-block">
+        <div class="block-image">
+          <img src="images/produtos/maq7.jpg" alt="Produção TB Máquinas" loading="lazy">
+        </div>
+        <div class="block-content fade-up">
+          <span class="section-label">Nossa Missão</span>
+          <h2>Soluções sob medida para sua produção</h2>
+          <p>Desenvolvemos equipamentos que atendem às mais variadas necessidades industriais, desde pequenas indústrias até grandes linhas de produção.</p>
+          <p>Cada máquina é projetada com foco na produtividade, durabilidade e facilidade de operação, sempre respeitando as normas de segurança vigentes como a NR12.</p>
+        </div>
+      </div>
+
+      <div class="about-block reverse">
+        <div class="block-image">
+          <img src="images/produtos/maq8.jpg" alt="Máquinas TB Máquinas em operação" loading="lazy">
+        </div>
+        <div class="block-content fade-up">
+          <span class="section-label">Tecnologia</span>
+          <h2>Alta tecnologia nacional</h2>
+          <p>Utilizamos componentes e tecnologias de ponta na fabricação de todos nossos equipamentos. Trabalhamos com parceiros como Leuze, Schneider, Delta e Omicron para garantir a máxima qualidade.</p>
+          <p>Nossa capacidade produtiva permite o atendimento de demandas específicas com prazos competitivos e suporte técnico completo.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HISTÓRICO INSTITUCIONAL -->
+    <section class="section-padding bg-light" style="background-color: var(--white);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 60px; align-items: stretch;">
+          <div class="fade-up" style="display: flex;">
+            <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 16px;">
+              <div style="border-radius: var(--radius-lg); border: 4px solid var(--white); box-shadow: 0 20px 60px rgba(0,0,0,0.25); background-color: var(--white); display: flex; max-height: 100%;">
+                <img src="images/feiras/4444c944c805942207c37fddc926366599036913c606c34b0364711f976f304e (1).jpg" alt="Equipe e Histórico TB Máquinas" loading="lazy" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: calc(var(--radius-lg) - 4px); display: block;">
+              </div>
+            </div>
+          </div>
+          <div class="fade-up fade-up-delay-1" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div style="margin-bottom: 24px;">
+              <span class="section-label">Nossa Trajetória</span>
+              <h2 style="font-size: clamp(24px, 3vw, 32px); margin-bottom: 0; color: var(--dark-text); font-family: var(--font-heading); font-weight: 700; line-height: 1.2;">Histórico TB Máquinas & Equipamentos LTDA</h2>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <p style="font-size: 16px; line-height: 1.8; color: var(--body-text); margin: 0;">Iniciaram-se suas atividades em 11/11/2020, mediante empresas MEI, CT Representações de Cassiano Tomazzini e TB Máquinas e Reformas de Thiago Borges, ambos conhecidos e colegas em outras empresas do ramo, decidiram junto à JC Assessoria Administrativa juntar suas expertises e iniciar a venda e produção de máquinas rotuladoras. Levando em consideração o período da pandemia e o mercado retraído, foi planejada a unificação das duas empresas MEI.</p>
+              <p style="font-size: 16px; line-height: 1.8; color: var(--body-text); margin: 0;">Com o sucesso dessa iniciativa, a empresa passou para o regime SIMPLES em 22/06/2021, passando a chamar-se TB Máquinas & Equipamentos LTDA, marca patenteada, tendo ambos como sócios igualitários e sendo administrada pela JC Assessoria. Mesmo sendo uma empresa jovem, já conquistou diversas regiões do Brasil e iniciou sua atuação no mercado externo, com perspectivas de expansão. Conta com profissionais capacitados, assistência técnica remota e presencial e participou da Feira ENVASE Brasil 2024, consolidando sua presença no mercado de máquinas.</p>
+              <p style="font-size: 16px; line-height: 1.8; color: var(--body-text); margin: 0;">Atuamos em uma área altamente competitiva e, por isso, estamos sempre investindo em tecnologia e pesquisa para estar um passo à frente de nossos competidores. Esse compromisso com a qualidade garante o nosso sucesso e a satisfação de nossos clientes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTES -->
+    <section class="section-padding bg-light" id="clientes">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Nossos Clientes</span>
+          <h2 class="section-title section-title-line">Clientes</h2>
+          <p class="section-desc">Empresas de diferentes setores confiam nas soluções da TB Máquinas.</p>
+        </div>
+        <div class="partners-grid fade-up">
+          <img src="images/clientes/2-removebg-preview.png"  alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/3-removebg-preview.png"  alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/4-removebg-preview.png"  alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/5-removebg-preview.png"  alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/6-removebg-preview.png"  alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/7-removebg-preview.png"  alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/8-removebg-preview.png"  alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/9-removebg-preview.png"  alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/10-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/11-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/12-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/14-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/15-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/16-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/17-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/18-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/20-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/21-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/22-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/23-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/24-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/25-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/26-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/28-removebg-preview.png" alt="Cliente TB Máquinas" class="partner-logo" loading="lazy">
+          <img src="images/clientes/multhiel-removebg-preview.png" alt="Multhiel" class="partner-logo" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSÃO, VISÃO E VALORES -->
+    <section class="bg-light" style="background-color: var(--white); padding: 60px 0 40px 0;">
+      <div class="container">
+        <div class="section-header fade-up" style="margin-bottom: 0;">
+          <span class="section-label">Nossos Princípios</span>
+          <h2 class="section-title section-title-line">Missão, Visão e Valores</h2>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px;">
+          <div class="fade-up" style="background: var(--light-bg); padding: 32px 24px; border-radius: 12px; text-align: center; border: 1px solid var(--border); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div style="width: 56px; height: 56px; background: rgba(2,26,71,0.06); color: var(--primary); font-size: 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin: 0 auto 16px auto;"><i class="fas fa-bullseye"></i></div>
+            <h3 style="font-size: 20px; color: var(--dark-text); margin-bottom: 12px;">Missão</h3>
+            <p style="font-size: 15px; color: var(--body-text); line-height: 1.5; margin: 0;">Conquistar, manter e receber a satisfação de nossos clientes, garantindo ao mercado de máquinas a qualidade de nossos produtos e serviços, com o comprometimento de toda nossa equipe.</p>
+          </div>
+          <div class="fade-up fade-up-delay-1" style="background: var(--light-bg); padding: 32px 24px; border-radius: 12px; text-align: center; border: 1px solid var(--border); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div style="width: 56px; height: 56px; background: rgba(2,26,71,0.06); color: var(--primary); font-size: 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin: 0 auto 16px auto;"><i class="fas fa-eye"></i></div>
+            <h3 style="font-size: 20px; color: var(--dark-text); margin-bottom: 12px;">Visão</h3>
+            <p style="font-size: 15px; color: var(--body-text); line-height: 1.5; margin: 0;">Consolidar-se como uma empresa sustentável, com a participação diferenciada no setor de equipamentos e rotulagem.</p>
+          </div>
+          <div class="fade-up fade-up-delay-2" style="background: var(--light-bg); padding: 32px 24px; border-radius: 12px; text-align: center; border: 1px solid var(--border); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div style="width: 56px; height: 56px; background: rgba(2,26,71,0.06); color: var(--primary); font-size: 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin: 0 auto 16px auto;"><i class="fas fa-gem"></i></div>
+            <h3 style="font-size: 20px; color: var(--dark-text); margin-bottom: 12px;">Valores</h3>
+            <p style="font-size: 15px; color: var(--body-text); line-height: 1.5; margin: 0;">Inovação, Qualidade, Design e Ética.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIXA DE RESPIRO VISUAL -->
+    <div style="width: 100%; height: 80px;"></div>
+
+    <!-- PARCEIROS TECNOLÓGICOS -->
+    <section id="parceiros" style="background-color: var(--light-bg); padding: 100px 0; border-top: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05);">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Parceiros</span>
+          <h2 class="section-title section-title-line">Parceiros Tecnológicos</h2>
+          <p class="section-desc">Utilizamos componentes dos melhores fornecedores do mercado para garantir qualidade e confiabilidade.</p>
+        </div>
+        <div class="partners-grid fade-up">
+          <img src="images/clientes/image-removebg-preview-1.png"  alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+          <img src="images/clientes/image-removebg-preview-2.png"  alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+          <img src="images/clientes/image-removebg-preview-3.png"  alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+          <img src="images/clientes/image-removebg-preview-4.png"  alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+          <img src="images/clientes/image-removebg-preview-5.png"  alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+          <img src="images/clientes/image-removebg-preview-6.png"  alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+          <img src="images/clientes/image-removebg-preview-7.png"  alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+          <img src="images/clientes/image-removebg-preview-8.png"  alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+          <img src="images/clientes/image-removebg-preview-9.png"  alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+          <img src="images/clientes/image-removebg-preview-10.png" alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+          <img src="images/clientes/image-removebg-preview-11.png" alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+          <img src="images/clientes/image-removebg-preview-12.png" alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+          <img src="images/clientes/image-removebg-preview-13.png" alt="Parceiro tecnológico" class="partner-logo" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- FEIRAS -->
+    <section class="bg-light" id="feiras-sobre" style="background-color: var(--white); padding: 60px 0 40px 0;">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Eventos</span>
+          <h2 class="section-title section-title-line">Feiras e Exposições</h2>
+          <p class="section-desc">A TB Máquinas participa regularmente das principais feiras do setor de embalagens, como a Feira ENVASE Brasil.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item fade-up">
+            <img src="images/feiras/envase-1.webp" alt="Feira ENVASE – TB Máquinas" loading="lazy">
+            <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+          </div>
+          <div class="gallery-item fade-up fade-up-delay-1">
+            <img src="images/feiras/envase-2.webp" alt="Feira ENVASE – TB Máquinas" loading="lazy">
+            <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+          </div>
+          <div class="gallery-item fade-up fade-up-delay-2">
+            <img src="images/feiras/feira1.png" alt="Feira – TB Máquinas" loading="lazy">
+            <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top:36px;">
+          <a href="feiras.html" class="btn btn-outline">Ver Galeria Completa <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner section-padding-sm">
+      <div class="container">
+        <div class="cta-inner">
+          <div class="cta-text">
+            <h2>Vamos trabalhar juntos?</h2>
+            <p>Entre em contato e descubra como a TB Máquinas pode transformar sua linha de produção.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contato.html#formulario" class="btn btn-primary"><i class="fas fa-envelope"></i> Fale Conosco</a>
+            <a href="https://wa.me/5554992425851?text=Ol%C3%A1!%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20e%20servi%C3%A7os%20da%20TB%20M%C3%A1quinas." class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" style="display:block;margin-bottom:24px;">
+            <img src="images/produtos/cropped-logomarca.png" alt="TB Máquinas" style="max-height:90px;width:auto;object-fit:contain;">
+          </a>
+          <p class="footer-desc">Trabalhamos com inovação de alto nível e as tecnologias mais modernas de produção de rotuladoras e peças de reposição.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/tbmaquinas_equipamentos/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@TBMAQUINAS" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/5554992425851?text=Ol%C3%A1!%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20e%20servi%C3%A7os%20da%20TB%20M%C3%A1quinas." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:tbmaquinas@tbmaquinas.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-widget">
+          <h4>Navegação</h4>
+          <nav class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="feiras.html">Feiras</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+          </nav>
+        </div>
+        <div class="footer-widget">
+          <h4>Produtos</h4>
+          <nav class="footer-links">
+            <a href="envolvedora-tb-evp-pre.html">Envolvedoras</a>
+            <a href="mesa-acumulo-tb-ms.html">Mesas de Acúmulo</a>
+            <a href="rotuladora-tb-raa.html">Rotuladora TB-RAA</a>
+            <a href="rotuladora-tb-raa-cabine.html">TB-RAA c/ Cabine</a>
+            <a href="rotuladora-master-label-bopp.html">Master Label BOPP</a>
+            <a href="rotuladora-tb-rsa-1000.html">TB-RSA 1000</a>
+          </nav>
+        </div>
+        <div class="footer-widget">
+          <h4>Contato</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Rua Augusto Caprara, 382<br>Bairro Licorsul | CEP 95705-793</span></div>
+            <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+555436981050">+55 54 3698-1050</a></div>
+            <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><a href="https://wa.me/5554992425851?text=Ol%C3%A1!%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20e%20servi%C3%A7os%20da%20TB%20M%C3%A1quinas." target="_blank" rel="noopener">+55 54 99242-5851</a></div>
+            <div class="footer-contact-item" style="align-items:flex-start;"><i class="fas fa-envelope"></i><div style="display:flex;flex-direction:column;gap:2px;"><a href="mailto:tbmaquinas@tbmaquinas.com">tbmaquinas@tbmaquinas.com</a><a href="mailto:cassiano.comercial@tbmaquinas.com">cassiano.comercial@tbmaquinas.com</a></div></div>
+            <div class="footer-contact-item"><i class="fas fa-clock"></i><span>07:30–11:30 | 13:30–17:00</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copyright">&copy; 2026 <strong>TB Máquinas</strong>. Todos os direitos reservados. | Desenvolvido por <a href="https://evolutor.com.br/" target="_blank" rel="noopener" style="font-family:'mbf-canno', sans-serif; color:var(--accent);">Evolutor</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5554992425851?text=Ol%C3%A1!%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20e%20servi%C3%A7os%20da%20TB%20M%C3%A1quinas." class="float-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i><span class="wa-tooltip">Fale conosco</span>
+  </a>
+  <button id="scroll-top" aria-label="Voltar ao topo"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>

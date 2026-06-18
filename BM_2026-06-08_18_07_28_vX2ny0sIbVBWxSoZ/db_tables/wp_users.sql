@@ -1,0 +1,7 @@
+/* CUSTOM VARS START */
+/* REAL_TABLE_NAME: `wp_users`; */
+/* PRE_TABLE_NAME: `1780942049_wp_users`; */
+/* CUSTOM VARS END */
+
+CREATE TABLE IF NOT EXISTS `1780942049_wp_users` ( `ID` bigint unsigned NOT NULL AUTO_INCREMENT, `user_login` varchar(60) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '', `user_pass` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '', `user_nicename` varchar(50) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '', `user_email` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '', `user_url` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '', `user_registered` datetime NOT NULL DEFAULT '0000-00-00 00:00:00', `user_activation_key` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '', `user_status` int NOT NULL DEFAULT '0', `display_name` varchar(250) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '', PRIMARY KEY (`ID`), KEY `user_login_key` (`user_login`), KEY `user_nicename` (`user_nicename`), KEY `user_email` (`user_email`)) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+INSERT INTO `1780942049_wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES (1,'admin','$wp$2y$10$MrlnfKcqKTiG73n4ZVo04.RvyczjB7YMZIraGxe9RS3lqExE6zG1i','admin','admin@umaprevia.com.br','https://maquinas.umaprevia.com.br','2026-01-14 18:40:18','',0,'admin');

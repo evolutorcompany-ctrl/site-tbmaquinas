@@ -1,0 +1,7 @@
+/* CUSTOM VARS START */
+/* REAL_TABLE_NAME: `wp5c_frmt_form_reports`; */
+/* PRE_TABLE_NAME: `1780942049_wp5c_frmt_form_reports`; */
+/* CUSTOM VARS END */
+
+CREATE TABLE IF NOT EXISTS `1780942049_wp5c_frmt_form_reports` ( `report_id` bigint unsigned NOT NULL AUTO_INCREMENT, `report_value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL, `status` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL, `date_created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00', `date_updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00', PRIMARY KEY (`report_id`)) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+INSERT INTO `1780942049_wp5c_frmt_form_reports` (`report_id`, `report_value`, `status`, `date_created`, `date_updated`) VALUES (1,'a:5:{s:7:\"exclude\";a:1:{i:0;i:1;}s:8:\"settings\";a:3:{s:5:\"label\";s:12:\"Form reports\";s:6:\"module\";s:5:\"forms\";s:10:\"forms_type\";s:3:\"all\";}s:8:\"schedule\";a:3:{s:9:\"frequency\";s:7:\"monthly\";s:8:\"monthDay\";s:1:\"4\";s:9:\"monthTime\";s:8:\"04:00 AM\";}s:13:\"report_status\";s:8:\"inactive\";s:10:\"recipients\";a:1:{i:0;a:5:{s:2:\"id\";i:1;s:4:\"name\";s:5:\"tbmaq\";s:5:\"email\";s:31:\"admin@maquinas.umaprevia.com.br\";s:4:\"role\";s:13:\"Administrator\";s:6:\"avatar\";s:81:\"https://secure.gravatar.com/avatar/7be96b7ba44e99271140d85d38c09169?s=96&d=mm&r=g\";}}}','inactive','2023-10-22 21:31:29','2023-10-22 21:31:29');

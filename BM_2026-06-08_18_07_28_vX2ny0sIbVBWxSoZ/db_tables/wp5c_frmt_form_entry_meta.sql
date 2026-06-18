@@ -1,0 +1,7 @@
+/* CUSTOM VARS START */
+/* REAL_TABLE_NAME: `wp5c_frmt_form_entry_meta`; */
+/* PRE_TABLE_NAME: `1780942049_wp5c_frmt_form_entry_meta`; */
+/* CUSTOM VARS END */
+
+CREATE TABLE IF NOT EXISTS `1780942049_wp5c_frmt_form_entry_meta` ( `meta_id` bigint unsigned NOT NULL AUTO_INCREMENT, `entry_id` bigint unsigned NOT NULL, `meta_key` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL, `meta_value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci, `date_created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00', `date_updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00', PRIMARY KEY (`meta_id`), KEY `meta_key` (`meta_key`), KEY `meta_entry_id` (`entry_id`), KEY `meta_key_object` (`entry_id`,`meta_key`)) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+INSERT INTO `1780942049_wp5c_frmt_form_entry_meta` (`meta_id`, `entry_id`, `meta_key`, `meta_value`, `date_created`, `date_updated`) VALUES (1,1,'name-1','Gustavo','2023-10-22 21:41:34','0000-00-00 00:00:00'),(2,1,'email-1','contato@gustavosouza.dev.br','2023-10-22 21:41:34','0000-00-00 00:00:00'),(3,1,'phone-1',5583999999,'2023-10-22 21:41:34','0000-00-00 00:00:00'),(4,1,'select-1','Orçamento','2023-10-22 21:41:34','0000-00-00 00:00:00'),(5,1,'textarea-1','Testando','2023-10-22 21:41:34','0000-00-00 00:00:00'),(6,1,'_forminator_user_ip','179.190.208.56','2023-10-22 21:41:34','0000-00-00 00:00:00');

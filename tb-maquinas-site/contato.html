@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | TB Máquinas – Fale Conosco e Solicite Orçamento</title>
+  <meta name="description" content="Entre em contato com a TB Máquinas. Solicite orçamento de rotuladoras, envolvedoras e assistência técnica.">
+  <link rel="icon" type="image/png" href="images/produtos/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+    .contact-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .contact-info-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(2,26,71,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+    .contact-info-text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .contact-info-text strong {
+      font-size: 16px;
+      color: var(--dark-text);
+      font-weight: 700;
+    }
+    .contact-info-text a, .contact-info-text span {
+      font-size: 15px;
+      color: var(--body-text);
+      text-decoration: none;
+      line-height: 1.5;
+    }
+    .contact-info-text a:hover {
+      color: var(--accent);
+    }
+    
+    .contact-form-card {
+      background: var(--white);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+    }
+    .contact-form-card h3 {
+      font-size: 24px;
+      margin-bottom: 24px;
+      color: var(--dark-text);
+    }
+    .form-group { margin-bottom: 20px; }
+    .form-label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--dark-text);
+      margin-bottom: 8px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: inherit;
+      color: var(--dark-text);
+      transition: all 0.3s ease;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(2,26,71,0.1);
+    }
+    textarea.form-control { resize: vertical; min-height: 120px; }
+    
+    @media (max-width: 900px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .contact-form-card { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="topbar-contact">
+          <a href="tel:+555436981050"><i class="fas fa-phone"></i> +55 54 3698-1050</a>
+          <a href="https://wa.me/5554992425851?text=Ol%C3%A1!%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20e%20servi%C3%A7os%20da%20TB%20M%C3%A1quinas." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> +55 54 99242-5851</a>
+          <a href="mailto:tbmaquinas@tbmaquinas.com"><i class="fas fa-envelope"></i> tbmaquinas@tbmaquinas.com</a>
+        </div>
+        <div class="topbar-right">
+          <div class="topbar-hours">Atendimento: 07:30 às 11:30 | 13:30 às 17:00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" id="logo-header" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+          <img src="images/produtos/favicon.png" alt="TB Máquinas" style="height:40px;width:auto;object-fit:contain;">
+          <span class="logo-text" style="font-family: var(--font-heading); font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #ffffff;">Máquinas e Equipamentos</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+            <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
+            <li class="nav-item"><a href="feiras.html" class="nav-link">Feiras</a></li>
+            <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="contato.html" class="nav-link active">Contato</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a href="contato.html#formulario" class="btn btn-nav">Solicitar Orçamento</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero-visual" style="background-image: url('images/feiras/envase-2.webp');">
+      <div class="hero-overlay"></div>
+      <div class="container fade-up">
+        <div class="page-hero-content">
+          <nav class="breadcrumb">
+            <a href="index.html">Início</a>
+            <span class="breadcrumb-sep"><i class="fas fa-chevron-right"></i></span>
+            <span class="breadcrumb-current">Contato</span>
+          </nav>
+          <span class="hero-label">Fale Conosco</span>
+          <h1>Contato</h1>
+          <p class="hero-desc">Estamos prontos para atender sua empresa. Entre em contato pelos canais abaixo ou solicite um orçamento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO GRID -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info fade-up">
+            <span class="section-label">Fale Conosco</span>
+            <h2 class="section-title section-title-line left" style="text-align:left;">Informações de Contato</h2>
+            <p class="section-desc" style="text-align:left; max-width:100%; margin-bottom:36px;">Estamos prontos para atender sua empresa. Entre em contato pelos canais abaixo ou preencha o formulário para solicitar um orçamento.</p>
+            
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                <div class="contact-info-text">
+                  <strong>Telefone</strong>
+                  <a href="tel:+555436981050">+55 54 3698-1050</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon" ><i class="fab fa-whatsapp"></i></div>
+                <div class="contact-info-text">
+                  <strong>WhatsApp</strong>
+                  <a href="https://wa.me/5554992425851?text=Ol%C3%A1!%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20e%20servi%C3%A7os%20da%20TB%20M%C3%A1quinas." target="_blank" rel="noopener">+55 54 99242-5851</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-info-text">
+                  <strong>E-mail</strong>
+                  <a href="mailto:tbmaquinas@tbmaquinas.com">tbmaquinas@tbmaquinas.com</a>
+                  <a href="mailto:cassiano.comercial@tbmaquinas.com">cassiano.comercial@tbmaquinas.com</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="contact-info-text">
+                  <strong>Endereço</strong>
+                  <span>Rua Augusto Caprara, 382<br>Bairro Licorsul | CEP 95705-793</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon" ><i class="fab fa-instagram"></i></div>
+                <div class="contact-info-text">
+                  <strong>Instagram</strong>
+                  <a href="https://www.instagram.com/tbmaquinas_equipamentos/" target="_blank" rel="noopener">@tbmaquinas_equipamentos</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon" ><i class="fab fa-youtube"></i></div>
+                <div class="contact-info-text">
+                  <strong>YouTube</strong>
+                  <a href="https://www.youtube.com/@TBMAQUINAS" target="_blank" rel="noopener">@TBMAQUINAS</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+                <div class="contact-info-text">
+                  <strong>Atendimento</strong>
+                  <span>07:30 às 11:30 | 13:30 às 17:00<br>de acordo com a necessidade do cliente</span>
+                </div>
+              </div>
+            </div>
+            
+            <div style="margin-top:36px;">
+              <a href="https://wa.me/5554992425851?text=Ol%C3%A1!%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20e%20servi%C3%A7os%20da%20TB%20M%C3%A1quinas." class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+            </div>
+          </div>
+          
+          <div class="contact-form fade-up fade-up-delay-1" id="formulario">
+            <div class="contact-form-card">
+              <h3>Solicitar Orçamento / Mensagem</h3>
+              <form action="#" method="post" novalidate>
+                <div class="form-group">
+                  <label class="form-label" for="nome">Nome</label>
+                  <input type="text" id="nome" name="nome" class="form-control" required placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="empresa">Empresa</label>
+                  <input type="text" id="empresa" name="empresa" class="form-control" required placeholder="Nome da sua empresa">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">E-mail</label>
+                  <input type="email" id="email" name="email" class="form-control" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="seu@email.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="telefone">Telefone / WhatsApp</label>
+                  <input type="tel" id="telefone" name="telefone" class="form-control" required placeholder="(00) 00000-0000">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="interesse">Produto / Serviço de Interesse</label>
+                  <select id="interesse" name="interesse" class="form-control" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="envolvedoras">Envolvedoras de Pallets</option>
+                    <option value="mesas">Mesas de Acúmulo</option>
+                    <option value="rotuladoras">Rotuladoras Automáticas</option>
+                    <option value="rotuladoras-semi">Rotuladoras Semi-Automáticas</option>
+                    <option value="pecas">Peças de Reposição</option>
+                    <option value="manutencao">Assistência Técnica</option>
+                    <option value="outro">Outro assunto</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="mensagem">Mensagem</label>
+                  <textarea id="mensagem" name="mensagem" class="form-control" required placeholder="Descreva sua necessidade..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fas fa-paper-plane"></i> Enviar Mensagem</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+        <div style="margin-top: 60px; width: 100%; height: 400px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.587391942475!2d-51.5230953!3d-29.1764264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951c3c9b9b8b9b9b%3A0x9b9b9b9b9b9b9b9b!2sR.%20Augusto%20Caprara%2C%20382%20-%20Licorsul%2C%20Bento%20Gon%C3%A7alves%20-%20RS%2C%2095705-793!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" style="display:block;margin-bottom:24px;">
+            <img src="images/produtos/cropped-logomarca.png" alt="TB Máquinas" style="max-height:90px;width:auto;object-fit:contain;">
+          </a>
+          <p class="footer-desc">Trabalhamos com inovação de alto nível e as tecnologias mais modernas de produção de rotuladoras e peças de reposição.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/tbmaquinas_equipamentos/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@TBMAQUINAS" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/5554992425851?text=Ol%C3%A1!%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20e%20servi%C3%A7os%20da%20TB%20M%C3%A1quinas." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:tbmaquinas@tbmaquinas.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-widget">
+          <h4>Navegação</h4>
+          <nav class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="feiras.html">Feiras</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+          </nav>
+        </div>
+        <div class="footer-widget">
+          <h4>Produtos</h4>
+          <nav class="footer-links">
+            <a href="envolvedora-tb-evp-pre.html">Envolvedoras</a>
+            <a href="mesa-acumulo-tb-ms.html">Mesas de Acúmulo</a>
+            <a href="rotuladora-tb-raa.html">Rotuladora TB-RAA</a>
+            <a href="rotuladora-tb-raa-cabine.html">TB-RAA c/ Cabine</a>
+            <a href="rotuladora-master-label-bopp.html">Master Label BOPP</a>
+            <a href="rotuladora-tb-rsa-1000.html">TB-RSA 1000</a>
+          </nav>
+        </div>
+        <div class="footer-widget">
+          <h4>Contato</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Rua Augusto Caprara, 382<br>Bairro Licorsul | CEP 95705-793</span></div>
+            <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+555436981050">+55 54 3698-1050</a></div>
+            <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><a href="https://wa.me/5554992425851?text=Ol%C3%A1!%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20e%20servi%C3%A7os%20da%20TB%20M%C3%A1quinas." target="_blank" rel="noopener">+55 54 99242-5851</a></div>
+            <div class="footer-contact-item" style="align-items:flex-start;"><i class="fas fa-envelope"></i><div style="display:flex;flex-direction:column;gap:2px;"><a href="mailto:tbmaquinas@tbmaquinas.com">tbmaquinas@tbmaquinas.com</a><a href="mailto:cassiano.comercial@tbmaquinas.com">cassiano.comercial@tbmaquinas.com</a></div></div>
+            <div class="footer-contact-item"><i class="fas fa-clock"></i><span>07:30–11:30 | 13:30–17:00</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copyright">&copy; 2026 <strong>TB Máquinas</strong>. Todos os direitos reservados. | Desenvolvido por <a href="https://evolutor.com.br/" target="_blank" rel="noopener" style="font-family:'mbf-canno', sans-serif; color:var(--accent);">Evolutor</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.querySelector(".contact-form-card form");
+      if(form) {
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          
+          const nome = document.getElementById("nome").value.trim();
+          const empresa = document.getElementById("empresa").value.trim();
+          const telefone = document.getElementById("telefone").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const interesse = document.getElementById("interesse").value.trim();
+          
+          if(!nome || !empresa || !telefone || !interesse || !email) {
+            alert("Por favor, preencha todos os campos obrigatórios (Nome, Empresa, Telefone, E-mail, Interesse).");
+            return;
+          }
+          
+          const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          if(!emailRegex.test(email)) {
+            alert("Por favor, insira um e-mail válido com domínio correto (exemplo: contato@email.com).");
+            return;
+          }
+          
+          alert("Mensagem enviada com sucesso!");
+          form.reset();
+        });
+      }
+    });
+  </script>
+
+  <a href="https://wa.me/5554992425851?text=Ol%C3%A1!%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20e%20servi%C3%A7os%20da%20TB%20M%C3%A1quinas." class="float-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i><span class="wa-tooltip">Fale conosco</span>
+  </a>
+  <button id="scroll-top" aria-label="Voltar ao topo"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>

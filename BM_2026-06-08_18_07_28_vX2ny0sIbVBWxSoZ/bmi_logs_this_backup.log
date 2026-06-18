@@ -1,0 +1,287 @@
+[WARN] [2026-06-08 18:07:28] PHP CLI está manualmente desabilitado, o plugin irá pular todas as etapas de PHP CLI.
+[WARN] [2026-06-08 18:07:28] O arquivo PHP CLI não pode ser executado devido a um motivo desconhecido.
+[STEP] [2026-06-08 18:07:28] Iniciando backup...
+[INFO] [2026-06-08 18:07:28] Versão do Backup & Migration:2.1.0
+[INFO] [2026-06-08 18:07:28] Site do qual será feito backup:https://maquinas.umaprevia.com.br
+[INFO] [2026-06-08 18:07:28] Versão do PHP:8.3.17
+[INFO] [2026-06-08 18:07:28] Versão do WP: 7.0
+[INFO] [2026-06-08 18:07:28] Versão do MySQL:8.0.41
+[INFO] [2026-06-08 18:07:28] Comprimento Máximo do MySQL:67108864
+[INFO] [2026-06-08 18:07:28] Servidor web:nginx/1.21.4
+[INFO] [2026-06-08 18:07:28] Tempo máximo de execução (em segundos):90
+[INFO] [2026-06-08 18:07:28] Limite de memória (servidor): 768M
+[INFO] [2026-06-08 18:07:28] Limite de memória (wp-config): 40M
+[INFO] [2026-06-08 18:07:28] Limite de memória (wp-config admin): 768M
+[INFO] [2026-06-08 18:07:28] Máximo de linhas por consulta (nesse site):2000
+[INFO] [2026-06-08 18:07:28] Verificando se o diretório de backup possui permissão para gravação...
+[INFO] [2026-06-08 18:07:28] Iniciando o gerenciador de erros personalizado
+[SUCCESS] [2026-06-08 18:07:28] Sim, possui permissão para gravação...
+[STEP] [2026-06-08 18:07:28] Verificando arquivos...
+[WARN] [2026-06-08 18:07:29] Removendo arquivo do backup (muito grande)/home/umaprevia-maquinas/htdocs/maquinas.umaprevia.com.br/wp-content/archive.zip (120.61 MB)
+[WARN] [2026-06-08 18:07:29] Removendo arquivo do backup (devido às regras de caminho):/home/umaprevia-maquinas/htdocs/maquinas.umaprevia.com.br/wp-content/backup-migration-config.php
+[INFO] [2026-06-08 18:07:29] Tamanho total dos arquivos excluídos: 596548923 bytes
+[VERBOSE] [2026-06-08 18:07:29] Total size of excluded files (bytes): 596548923
+[STEP] [2026-06-08 18:07:29] Verificando espaço livre, reservando...
+[INFO] [2026-06-08 18:07:29] Requer ao menos 679437452 bytes. [647.96 MB]
+[INFO] [2026-06-08 18:07:29] A função de espaço livre em disco não está desativada, utilizando...
+[INFO] [2026-06-08 18:07:29] Verificando esse caminho/partição:/home/umaprevia-maquinas/htdocs/maquinas.umaprevia.com.br/wp-content/backup-migration-J4caj0bwGx/backups
+[SUCCESS] [2026-06-08 18:07:29] Há45,021.20 MB livres. [43.97 GB]
+[SUCCESS] [2026-06-08 18:07:29] Excelente! Temos espaço suficiente.
+[SUCCESS] [2026-06-08 18:07:29] Confirmado, há espaço mais do que suficiente, verificado:679437452 bytes
+[INFO] [2026-06-08 18:07:29] Varredura concluída - encontrados23695 arquivos...
+[SUCCESS] [2026-06-08 18:07:29] Backup iniciado...
+[STEP] [2026-06-08 18:07:29] Iniciando sistema de arquivamento...
+[SUCCESS] [2026-06-08 18:07:29] Sistema de arquivamento iniciado...
+[STEP] [2026-06-08 18:07:29] Preparando mapeamento de arquivos...
+[SUCCESS] [2026-06-08 18:07:29] Arquivos preparados.
+[INFO] [2026-06-08 18:07:29] Iniciando processo de compactação...
+[STEP] [2026-06-08 18:07:29] Cálculo de memória inteligente...
+[INFO] [2026-06-08 18:07:29] Há 768 MB de memória para usar
+[INFO] [2026-06-08 18:07:29] Limite de memória do WordPress: 768 MBs
+[SUCCESS] [2026-06-08 18:07:29] Estabelecendo o limite seguro para 57 MB
+[INFO] [2026-06-08 18:07:29] O ZipArchive está disponível, este processo deve usar o ZipArchive
+[INFO] [2026-06-08 18:07:29] Configuração antiga: usando módulos padrão dependendo do servidor do usuário
+[STEP] [2026-06-08 18:07:29] Fazendo backup do banco de dados (usando o mecanismo v3, requer pelo menos v1.2.2 para restaurar)
+[INFO] [2026-06-08 18:07:29] Iterando banco de dados...
+[INFO] [2026-06-08 18:07:29] Memory usage after initialization: 23.79 MB
+[VERBOSE] [2026-06-08 18:07:29] Exporting database via zip.php
+[INFO] [2026-06-08 18:07:29] Scan found 104 tables (8143 rows), estimated total size: 43.99 MB.
+[INFO] [2026-06-08 18:07:29] Memory usage after getting table names: 23.86 MB 
+[INFO] [2026-06-08 18:07:29] Getting table recipes...
+[INFO] [2026-06-08 18:07:29] Table recipes have been exported.
+[INFO] [2026-06-08 18:07:29] Memory usage after loading recipes: 23.95 MB 
+[INFO] [2026-06-08 18:07:29] Saving recipes...
+[INFO] [2026-06-08 18:07:29] Recipes saved.
+[INFO] [2026-06-08 18:07:29] Memory usage after recipe off-load: 23.88 MB
+[INFO] [2026-06-08 18:07:29] Exporting table data...
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_actionscheduler_actions (1/104, 0.77 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_actionscheduler_actions finished (0.02757s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_actionscheduler_claims (2/104, 0.03 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_actionscheduler_claims is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_actionscheduler_groups (3/104, 0.03 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_actionscheduler_groups finished (0.00080s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_actionscheduler_logs (4/104, 0.30 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_actionscheduler_logs finished (0.02988s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_cm_popfly_history (5/104, 0.02 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_cm_popfly_history is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_commentmeta (6/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_commentmeta is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_comments (7/104, 0.39 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_comments finished (0.03228s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_e_events (8/104, 0.03 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_e_events finished (0.00085s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_e_submissions (9/104, 0.28 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_e_submissions is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_e_submissions_actions_log (10/104, 0.13 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_e_submissions_actions_log is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_e_submissions_values (11/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_e_submissions_values is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_frmt_form_entry (12/104, 0.06 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_frmt_form_entry finished (0.00111s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_frmt_form_entry_meta (13/104, 0.06 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_frmt_form_entry_meta finished (0.00085s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_frmt_form_reports (14/104, 0.02 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_frmt_form_reports finished (0.00074s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_frmt_form_views (15/104, 0.08 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_frmt_form_views finished (0.00066s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_links (16/104, 0.03 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_links is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_litespeed_url (17/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_litespeed_url is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_litespeed_url_file (18/104, 0.09 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_litespeed_url_file is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_nf3_action_meta (19/104, 0.02 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_nf3_action_meta finished (0.00172s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_nf3_actions (20/104, 0.02 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_nf3_actions finished (0.00061s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_nf3_chunks (21/104, 0.02 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_nf3_chunks is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_nf3_field_meta (22/104, 0.02 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_nf3_field_meta finished (0.00270s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_nf3_fields (23/104, 0.02 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_nf3_fields finished (0.00092s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_nf3_form_meta (24/104, 0.02 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_nf3_form_meta finished (0.00104s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_nf3_forms (25/104, 0.02 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_nf3_forms finished (0.00077s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_nf3_object_meta (26/104, 0.02 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_nf3_object_meta is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_nf3_objects (27/104, 0.02 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_nf3_objects is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_nf3_relationships (28/104, 0.02 MB)
+[INFO] [2026-06-08 18:07:29] Table wp5c_nf3_relationships is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_nf3_upgrades (29/104, 0.02 MB)
+[SUCCESS] [2026-06-08 18:07:29] Table export for: wp5c_nf3_upgrades finished (0.00077s)
+[STEP] [2026-06-08 18:07:29] Getting data of table: wp5c_options (30/104, 12.19 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_options finished (0.28188s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_postmeta (31/104, 16.36 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_postmeta finished (0.07985s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_posts (32/104, 7.31 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_posts finished (0.07240s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_term_relationships (33/104, 0.03 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_term_relationships finished (0.00090s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_term_taxonomy (34/104, 0.05 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_term_taxonomy finished (0.00127s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_termmeta (35/104, 0.05 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_termmeta finished (0.00089s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_terms (36/104, 0.05 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_terms finished (0.00104s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_usermeta (37/104, 0.06 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_usermeta finished (0.00379s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_users (38/104, 0.06 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_users finished (0.00083s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_admin_note_actions (39/104, 0.09 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_wc_admin_note_actions finished (0.00685s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_admin_notes (40/104, 0.09 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_wc_admin_notes finished (0.00948s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_category_lookup (41/104, 0.02 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_wc_category_lookup finished (0.00064s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_customer_lookup (42/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_customer_lookup is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_download_log (43/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_download_log is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_order_addresses (44/104, 0.08 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_order_addresses is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_order_coupon_lookup (45/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_order_coupon_lookup is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_order_operational_data (46/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_order_operational_data is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_order_product_lookup (47/104, 0.09 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_order_product_lookup is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_order_stats (48/104, 0.08 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_order_stats is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_order_tax_lookup (49/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_order_tax_lookup is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_orders (50/104, 0.13 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_orders is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_orders_meta (51/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_orders_meta is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_product_attributes_lookup (52/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_product_attributes_lookup is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_product_download_directories (53/104, 0.03 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_wc_product_download_directories finished (0.00066s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_product_meta_lookup (54/104, 0.13 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_wc_product_meta_lookup finished (0.00132s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_rate_limits (55/104, 0.03 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_rate_limits is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_reserved_stock (56/104, 0.02 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_reserved_stock is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_tax_rate_classes (57/104, 0.03 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_wc_tax_rate_classes finished (0.00068s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wc_webhooks (58/104, 0.03 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wc_webhooks is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_api_keys (59/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_api_keys is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_attribute_taxonomies (60/104, 0.03 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_attribute_taxonomies is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_downloadable_product_permissions (61/104, 0.08 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_downloadable_product_permissions is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_log (62/104, 0.03 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_log is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_order_itemmeta (63/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_order_itemmeta is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_order_items (64/104, 0.03 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_order_items is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_payment_tokenmeta (65/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_payment_tokenmeta is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_payment_tokens (66/104, 0.03 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_payment_tokens is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_sessions (67/104, 0.05 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_woocommerce_sessions finished (0.00064s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_shipping_zone_locations (68/104, 0.06 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_shipping_zone_locations is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_shipping_zone_methods (69/104, 0.02 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_shipping_zone_methods is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_shipping_zones (70/104, 0.02 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_shipping_zones is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_tax_rate_locations (71/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_tax_rate_locations is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_woocommerce_tax_rates (72/104, 0.08 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_woocommerce_tax_rates is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wpforms_logs (73/104, 0.02 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_wpforms_logs finished (0.00208s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wpforms_payment_meta (74/104, 0.06 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wpforms_payment_meta is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wpforms_payments (75/104, 0.16 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wpforms_payments is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wpforms_tasks_meta (76/104, 0.02 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_wpforms_tasks_meta finished (0.00083s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wpmailsmtp_debug_events (77/104, 0.02 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_wpmailsmtp_debug_events is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_wpmailsmtp_tasks_meta (78/104, 0.02 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_wpmailsmtp_tasks_meta finished (0.00062s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_yoast_indexable (79/104, 0.11 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_yoast_indexable finished (0.00236s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_yoast_indexable_hierarchy (80/104, 0.06 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_yoast_indexable_hierarchy finished (0.00077s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_yoast_migrations (81/104, 0.03 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_yoast_migrations finished (0.00065s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_yoast_primary_term (82/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp5c_yoast_primary_term is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp5c_yoast_seo_links (83/104, 0.09 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp5c_yoast_seo_links finished (0.00476s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_actionscheduler_actions (84/104, 0.13 MB)
+[INFO] [2026-06-08 18:07:30] Table wp_actionscheduler_actions is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_actionscheduler_claims (85/104, 0.03 MB)
+[INFO] [2026-06-08 18:07:30] Table wp_actionscheduler_claims is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_actionscheduler_groups (86/104, 0.03 MB)
+[INFO] [2026-06-08 18:07:30] Table wp_actionscheduler_groups is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_actionscheduler_logs (87/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp_actionscheduler_logs is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_commentmeta (88/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp_commentmeta is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_comments (89/104, 0.09 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp_comments finished (0.00083s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_links (90/104, 0.03 MB)
+[INFO] [2026-06-08 18:07:30] Table wp_links is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_options (91/104, 1.55 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp_options finished (0.01432s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_postmeta (92/104, 0.05 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp_postmeta finished (0.00067s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_posts (93/104, 0.09 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp_posts finished (0.00111s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_term_relationships (94/104, 0.03 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp_term_relationships finished (0.00061s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_term_taxonomy (95/104, 0.05 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp_term_taxonomy finished (0.00054s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_termmeta (96/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp_termmeta is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_terms (97/104, 0.05 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp_terms finished (0.00060s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_usermeta (98/104, 0.05 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp_usermeta finished (0.00079s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_users (99/104, 0.06 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp_users finished (0.00060s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_yoast_indexable (100/104, 0.11 MB)
+[INFO] [2026-06-08 18:07:30] Table wp_yoast_indexable is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_yoast_indexable_hierarchy (101/104, 0.06 MB)
+[INFO] [2026-06-08 18:07:30] Table wp_yoast_indexable_hierarchy is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_yoast_migrations (102/104, 0.03 MB)
+[SUCCESS] [2026-06-08 18:07:30] Table export for: wp_yoast_migrations finished (0.00061s)
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_yoast_primary_term (103/104, 0.05 MB)
+[INFO] [2026-06-08 18:07:30] Table wp_yoast_primary_term is empty, saving only recipe.
+[STEP] [2026-06-08 18:07:30] Getting data of table: wp_yoast_seo_links (104/104, 0.03 MB)
+[INFO] [2026-06-08 18:07:30] Table wp_yoast_seo_links is empty, saving only recipe.
+[INFO] [2026-06-08 18:07:30] Table data exported.
+[INFO] [2026-06-08 18:07:30] Memory usage after data export: 23.93 MB
+[INFO] [2026-06-08 18:07:30] Entire process took: 0.7665 s
+[SUCCESS] [2026-06-08 18:07:30] Backup de banco de dados concluído
+[STEP] [2026-06-08 18:07:30] Criando arquivo
+[INFO] [2026-06-08 18:07:30] Compactando...
+[WARN] [2026-06-08 18:07:30] O backup será executado como solicitação única, o processo pode se tornar instável...
+[INFO] [2026-06-08 18:07:30] Using ZipArchive extension for this backup process.
+[STEP] [2026-06-08 18:07:30] Adicionando arquivo(s) SQL do banco de dados ao arquivo de backup.
+[VERBOSE] [2026-06-08 18:07:30] Database files in total found: 104
+[SUCCESS] [2026-06-08 18:07:30] O banco de dados foi adicionado ao backup com sucesso.
+[STEP] [2026-06-08 18:07:30] Realizando o backup dos arquivos do site...
+[INFO] [2026-06-08 18:07:30] Os pedaços contêm4000 arquivos.
+[INFO] [2026-06-08 18:07:35] Etapa:4000/23695
+[INFO] [2026-06-08 18:07:39] Etapa:8000/23695
+[INFO] [2026-06-08 18:07:44] Etapa:12000/23695
+[INFO] [2026-06-08 18:07:46] Etapa:16000/23695
+[INFO] [2026-06-08 18:07:53] Etapa:20000/23695
+[INFO] [2026-06-08 18:08:06] Etapa:23695/23695
+[SUCCESS] [2026-06-08 18:08:06] Compactados23695 arquivos
+[INFO] [2026-06-08 18:08:06] O arquivamento de23695 arquivos levaram:36.82s
+[STEP] [2026-06-08 18:08:06] Finalizando o backup
+[INFO] [2026-06-08 18:08:06] Gerando arquivo de manifesto e salvando o log em tempo real...
